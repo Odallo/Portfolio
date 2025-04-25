@@ -1,126 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"/>
-    <title>DEV Odallo Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odallo | Software Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-          <nav class="flex items-center justify-between">
-            <div class="left flex justify-right">
-              <div class="logo">
-                <img src="odin-lined.png" width="50px" alt="logo" />
-              </div>
-              <div>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Blog</a>
-                <!-- <a href="#">More</a> -->
-              </div>
-            </div>
-            <div class="right">
-              <button class="btn btn-primary">Contact</button>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <div class="hero flex items-centre justify-between">
-        <div class="left flex-1 justify-center">
-          <img src="portfolio.jpg" alt="Profile" />
-        </div>
-        <div class="right flex-1">
-          <h6>Eugene Odallo</h6>
-          <h1>
-            I'm a Software<br />
-            <span>Developer</span>
-          </h1>
-          <p>
-              I specialize in front-end and back-end technologies like HTML,
-            CSS, JavaScript, Node.js, and PHP. With a keen eye for design and 
-            a passion for problem-solving, I craft engaging digital experiences that delight users.
-          </p>
-          <div>
-            <button class="btn btn-secondary">DOWNLOAD CV</button>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#home" class="logo">Odallo Eugine</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h1>Innovative Solutions Through Code</h1>
+      <p class="subtitle">Software Developer | AI/ML Specialist | Problem Solver</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm a passionate software developer with expertise in building intelligent systems and scalable applications. 
+          With experience in both frontend and backend development, I create solutions that are both functional and elegant.
+        </p>
+        <div class="about-details">
+          <div class="detail-item">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p>Computer Science Degree</p>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-briefcase"></i>
+            <h3>Experience</h3>
+            <p>3+ Years Developing</p>
           </div>
         </div>
       </div>
-      <section class="about">
-        <div class="container flex items-centre">
-          <div class="left flex-1 justify-right">
-            <img src="portfolio.jpg" height="400px" alt="profile pic" />
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/400x250" alt="AI Assistant">
           </div>
-          <div class="right flex-1">
-            <h1>About <span>Me</span></h1>
-            <h3>Hello! I am Eugene Odallo</h3>
-            <p>
-              A passionate software and web developer dedicated to crafting beautiful and functional websites.
-            With expertise in front-end and back-end technologies, 
-            I specialize in turning ideas into digital experiences that 
-            captivate and engage users. Let's create something amazing together!
-            </p>
-            <div class="socials">
-              <a href="#!"><i class="fab fa-github" aria-hidden="true"></i></a>
-              <a href="#!"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-              <a href="#!"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="services">
-        <div class="container">
-          <h1 class="services-head">Services</h1>
-          <p>All your digital needs...covered.</p>
-          <div class="card-grid">
-            <div class="card">
-              <img src="./img/graphics.webp" alt="graphic design" />
-              <h2>Graphic design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing el it.
-                debitis?
-              </p>
-            </div>
-            <div class="card">
-              <img src="./img/web.jpg" alt="web development" />
-              <h2>Web Development</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing el it.
-                debitis?
-              </p>
-            </div>
-            <div class="card">
-              <img src="./img/app.png" alt="content writing" />
-              <h2>App Development</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing el it.
-                debitis?
-              </p>
-            </div>
-  
-            <div class="card">
-              <img src="./img/hand.png" alt="content writing" />
-              <h2>IT Consulting</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing el it.
-                debitis?
-              </p>
+          <div class="project-info">
+            <h3>AI Assistant</h3>
+            <p>Voice-controlled assistant with user recognition built using Python and OpenAI.</p>
+            <div class="project-links">
+              <a href="https://github.com/Odallo" target="_blank"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="disabled">Live Demo</a>
             </div>
           </div>
         </div>
-      </section>
-  
-      <div class="footer">
-          <footer>
-              <p>&copy; 2024 Odallo. All rights reserved.</p>
-          </footer>
-      </div>  
-    
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/400x250" alt="Ayoayo Game">
+          </div>
+          <div class="project-info">
+            <h3>Ayoayo Game</h3>
+            <p>Traditional African board game implemented with Python logic and GUI.</p>
+            <div class="project-links">
+              <a href="https://github.com/Odallo" target="_blank"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="disabled">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://via.placeholder.com/400x250" alt="Hotel System">
+          </div>
+          <div class="project-info">
+            <h3>Hotel Management</h3>
+            <p>Full-stack system with PHP/MySQL backend and JavaScript frontend.</p>
+            <div class="project-links">
+              <a href="https://github.com/Odallo" target="_blank"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="disabled">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-cogs"></i> Frameworks</h3>
+          <ul>
+            <li>TensorFlow</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Flask</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <ul>
+            <li>Git/GitHub</li>
+            <li>Docker</li>
+            <li>Postman</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> eugeneodalo909@gmail.com</p>
+          <div class="social-links">
+            <a href="https://github.com/Odallo" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/odallo-eugine" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Odallo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
