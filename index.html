@@ -9,10 +9,10 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
-    <div class="container">
+  <nav class="navbar">
+    <div class="container nav-container">
       <a href="#home" class="logo">Odallo Eugine</a>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -23,15 +23,26 @@
 
   <!-- Hero Section -->
   <header id="home" class="hero">
-    <div class="container">
-      <h1>Innovative Solutions Through Code</h1>
-      <p class="subtitle">Software Developer | AI/ML Specialist | Problem Solver</p>
-      <a href="#projects" class="btn">View My Work</a>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi, I’m <span>Odallo Eugine</span></h1>
+        <p class="subtitle">
+          Software Developer | AI Enthusiast | Problem Solver
+        </p>
+        <p class="hero-description">
+          I build smart, scalable, and modern software solutions — from AI-powered tools to full-stack web and mobile applications.
+        </p>
+        <a href="#projects" class="btn">See My Work</a>
+      </div>
+      <!-- Optional: Hero image or avatar -->
+      <!-- <div class="hero-image">
+        <img src="images/profile.jpg" alt="Odallo" />
+      </div> -->
     </div>
   </header>
 
   <!-- About Section -->
-<section id="about" class="section">
+  <section id="about" class="section">
   <div class="container">
     <h2>About Me</h2>
     <div class="about-content">
@@ -75,6 +86,30 @@
   </div>
 </section>
 
+  <!-- SERVICES SECTION -->
+<section id="services" class="section bg-light">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Building responsive and scalable web applications using Next.js, Laravel, and React.</p>
+      </div>
+      <div class="service-card">
+        <h3>AI/ML Solutions</h3>
+        <p>Developing intelligent systems including chatbots and assistant tools using OpenAI and TensorFlow.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mobile App Development</h3>
+        <p>Creating cross-platform mobile applications with clean UI and seamless performance.</p>
+      </div>
+      <div class="service-card">
+        <h3>API Integrations</h3>
+        <p>Integrating third-party APIs for seamless feature extension in your systems and applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Projects Section -->
   <section id="projects" class="section bg-light">
@@ -138,6 +173,27 @@
     </div>
   </section>
 
+  <!-- CERTIFICATIONS SECTION -->
+<section id="certifications" class="section">
+  <div class="container">
+    <h2>Certifications</h2>
+    <div class="certifications-grid">
+      <div class="certification-card">
+        <h3>Python for Everybody</h3>
+        <p>University of Michigan</p>
+      </div>
+      <div class="certification-card">
+        <h3>TensorFlow Developer</h3>
+        <p>DeepLearning.AI</p>
+      </div>
+      <div class="certification-card">
+        <h3>OpenAI API Mastery</h3>
+        <p>Independent Learning</p>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Skills Section -->
   <section id="skills" class="section">
     <div class="container">
@@ -180,6 +236,51 @@
     </div>
   </section>
 
+  <!-- Testimonials Section -->
+<section id="testimonials" class="section bg-light">
+  <div class="container">
+    <h2>Testimonials</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Odallo delivered our project with exceptional quality and communicated clearly throughout the process."</p>
+        <h4>- Freelance Client</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"His AI assistant project was one of the best implementations we've seen in class."</p>
+        <h4>- Lecturer, Software Development</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Blog Section -->
+<section id="blog" class="section">
+  <div class="container">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3>Building an AI Assistant with Python</h3>
+        <p>How I developed a voice-controlled assistant using OpenAI and Python.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="blog-card">
+        <h3>Decoupled Weather App: Next.js & Laravel</h3>
+        <p>Insights into building a scalable weather application with a decoupled architecture.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CV DOWNLOAD BUTTON -->
+<section id="cv" class="section bg-light">
+  <div class="container">
+    <h2>Download My CV</h2>
+    <p>Get a detailed look at my projects, education, and technical experience.</p>
+    <a href="Eugine Odallo Junior Developer.pdf" class="btn" download>Download CV</a>
+  </div>
+</section>
+
   <!-- Contact Section -->
   <section id="contact" class="section bg-light">
     <div class="container">
@@ -211,5 +312,12 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Dark Mode Toggle
+    const toggle = document.getElementById('dark-mode-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
